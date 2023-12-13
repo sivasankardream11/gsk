@@ -1,0 +1,70 @@
+body {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_eHd6laTTNoJ7ficCuvCyvH5ZlCTVbg08w&usqp=CAU') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  form, #tablesContainer, .breaking-news, div {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .breaking-news p {
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    form, #tablesContainer, .breaking-news, div {
+      width: 70%;
+      margin: 20px auto;
+    }
+  }
+  

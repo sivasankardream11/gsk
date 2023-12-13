@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persistent Pan Mandi Tables</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>GSK Pan Mandi Tables</h2>
+
+  <form id="dataForm">
+    <label for="date">Date:</label>
+    <input type="date" id="date" required>
+
+    <label for="panmandi">Pan Mandi Name:</label>
+    <select id="panmandi" required>
+      <option value="Hs">HS</option>
+      <option value="Dpc">DPC</option>
+      <option value="Ypc">YPC</option>
+      <option value="Bpc">BPC</option>
+    </select>
+
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" required>
+
+    <label for="rate">Rate:</label>
+    <input type="number" id="rate" required>
+
+    <button type="button" onclick="updateTable()">Add Row</button>
+  </form>
+
+  <div id="tablesContainer"></div>
+
+  <div>
+    <button type="button" onclick="displayYearlyData()">Yearly Data</button>
+    <button type="button" onclick="displayHalfYearlyData()">Half-Yearly Data</button>
+    <button type="button" onclick="printPage()">Print</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
